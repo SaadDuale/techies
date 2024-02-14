@@ -1,0 +1,120 @@
+.site {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border-radius: 5px;
+  padding: 2rem;
+  height: 79vh;
+  display: flex;
+  color: black;
+}
+
+/* Menu styles */
+
+.heading-menu {
+  /* Target the tags with the class heading-menu
+    give it a width of 20% of the whole box
+    give it margin that 1 rem long - rem is a measurement
+    */
+  width: 20%;
+  margin-right: 1rem;
+}
+.pagesHeading {
+  /* Targe the tag with the class pagesHeading
+    put it in the center
+    give it a black background color
+    make the color of the text white
+    give it a padding of 0.3rem - padding is space inside the box
+    curve the border by 5 pixels
+    */
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+.pagesMenu {
+  /* Target the element that has the class pagesMenu
+    see how many boxes there are, and place them horizontally
+    put as much space as possible between the boxes
+    */
+  display: flex;
+  justify-content: space-between;
+}
+.pagesMenu .menuItem {
+  /* Target the element that has the class pagesMenu
+    then target the element inside it, that has the class menuItem
+    give the background color of black
+    text color will be white
+    add a border thats 1 pixels thick, solid shaped, color is white
+    add width of 5rem
+    put the text in the center
+    curve the border by 5pixels
+    */
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  width: 5rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+:hover .menuItem {
+  /* when the user hovers over the menuItem 
+  give it a black background  
+  make the text white */
+
+  background-color: black;
+  color: white;
+}
+
+/* Profile styles */
+
+.allprofiles {
+  /* Target the tags that have the class allprofiles */
+  border: 1px solid black;
+  /* give it a border of 1px with a solid line that is black */
+  padding-left: 1rem;
+  /* give it a padding of 1rem to the left - padding is space inside the box */
+  padding-right: 1rem;
+  /* give it a padding of 1rem to the right - padding is the space inside the box */
+  padding-bottom: 1rem;
+  /* give it a padding of 1rem to the bottom - padding is space inside the box */
+  overflow: auto;
+  /* The overflow property specifies whether to clip the content or to add scrollbars */
+  width: 80%;
+  /* give it a width 80% */
+  border-radius: 5px;
+  /* give the border a radius of 5px */
+}
+
+.profile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.name {
+  background-color: black;
+  padding: 0.5rem;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.description {
+  line-height: 2rem;
+}
+
+.picture {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  background-color: black;
+  border-radius: 5px;
+}
